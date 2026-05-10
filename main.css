@@ -1,11 +1,17 @@
 body {
-
+    background-image: url(https://www.ceupe.pe/images/easyblog_articles/286/b2ap3_large_919.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
     h1{
         color:rgb(39, 30, 30);
         text-align:center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 60px;
         background-color: rgba(1, 184, 200);
+        border-radius: 50px;
+        opacity: 0.95;
+        text-decoration: underline;
     }
 }
 
@@ -16,6 +22,8 @@ body {
     padding: 0;
     display: flex; /* Menú horizontal */
     text-decoration-line: underline;
+    border-radius: 15px;
+    opacity: 0.95;
 }
 
 .menu li a {
@@ -23,6 +31,7 @@ body {
     padding: 20px;
     color: rgb(32, 31, 31);
     text-decoration: none;
+    border-radius: 15px;
 
 }
 
@@ -31,6 +40,7 @@ body {
     display: none;
     position: absolute;
     background: rgba(1, 184, 200);
+    border-radius: 15px;
 }
 
 /* Mostrar submenú al pasar el mouse */
@@ -40,5 +50,106 @@ body {
 
 /* Efecto hover en enlaces */
 .menu li a:hover {
-    background-color: #555;
+    
+    background-color: #2a29292c;
+    font-size: 25px;
+
+}
+
+.quees{
+    margin-top: 250px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: center;
+    opacity: 0.9;
+    font-size: 35px;
+    border-radius: 50px;
+    text-decoration: underline;
+}
+.cuerpo0{
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: left;
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.Ejemplo{
+    margin-top: 250px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: center;
+    opacity: 0.9;
+    font-size: 25px;
+    text-decoration: underline;
+    border-radius: 50px;
+}
+.cuerpo1{
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: left;
+    opacity: 0.9;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.quepasa{
+    margin-top: 250px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: center;
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 50px;
+    text-decoration: underline;
+}
+
+.cuerpo2 {
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: left;
+    opacity: 0.9;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.info{
+    margin-top: 250px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: center;
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 50px;
+    text-decoration: underline;
+}
+
+.cuerpo3{
+      margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: left;
+    opacity: 0.9;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.sponsors{
+    margin-top: 250x;
+    margin-bottom: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: center;
+    opacity: 0.95;
+    font-size: 25px;
+    border-radius: 50px;
+    text-decoration: underline;
 }
