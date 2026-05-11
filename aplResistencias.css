@@ -1,0 +1,112 @@
+body{
+    background-attachment: fixed;
+
+    background-image: url(https://images.unsplash.com/photo-1562408590-e32931084e23?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3RyJUMzJUIzbmljYXxlbnwwfHwwfHx8MA%3D%3D);
+}
+.titulo{
+    color:rgb(255, 255, 255);
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    background-color: rgb(107, 0, 107);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin: 10px;
+    text-decoration: underline;
+    opacity: 0.95;
+}
+
+.subtitulo{
+    color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    margin-top: 15px    ;
+    background-color: rgb(107, 0, 107);
+    text-align: center;
+    font-size: 25px;
+    font-weight:900;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.ayuda{
+    color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    margin-top: 15px    ;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 30px;
+}
+
+.cuerpo0{
+    color:rgb(255, 255, 255);
+    margin-bottom: 30px;
+    background-size:  20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(107, 0, 107);
+    text-align: left;   
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.usos{
+    color:rgb(255, 255, 255);
+    margin-bottom: 30px;
+    background-size:  20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(107, 0, 107);
+    text-align: left;   
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.formula{
+    text-align: center;
+}
+
+.ejemplo{
+    color:rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background-size:  20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(107, 0, 107);
+    text-align: left;   
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cuerpo1{
+    text-align: center;
+
+}

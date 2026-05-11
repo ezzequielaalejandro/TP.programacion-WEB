@@ -12,6 +12,8 @@ body {
         border-radius: 50px;
         opacity: 0.95;
         text-decoration: underline;
+        margin-bottom: 100px ;
+        margin-top: 15px;
     }
 }
 
@@ -66,15 +68,29 @@ body {
     font-size: 35px;
     border-radius: 50px;
     text-decoration: underline;
+    background-size: 25px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .cuerpo0{
     margin-bottom: 30px;
+    background-size:  20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(1, 184, 200);
-    text-align: left;
+    text-align: left;   
     opacity: 0.9;
     font-size: 25px;
     border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .Ejemplo{
@@ -87,6 +103,12 @@ body {
     font-size: 25px;
     text-decoration: underline;
     border-radius: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .cuerpo1{
     margin-bottom: 30px;
@@ -96,6 +118,12 @@ body {
     opacity: 0.9;
     font-size: 20px;
     border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .quepasa{
@@ -108,6 +136,12 @@ body {
     font-size: 25px;
     border-radius: 50px;
     text-decoration: underline;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cuerpo2 {
@@ -118,6 +152,12 @@ body {
     opacity: 0.9;
     font-size: 20px;
     border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .info{
@@ -130,6 +170,12 @@ body {
     font-size: 25px;
     border-radius: 50px;
     text-decoration: underline;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cuerpo3{
@@ -140,10 +186,16 @@ body {
     opacity: 0.9;
     font-size: 20px;
     border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .sponsors{
-    margin-top: 250x;
+    margin-top: 150px;
     margin-bottom: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(1, 184, 200);
@@ -152,4 +204,6 @@ body {
     font-size: 25px;
     border-radius: 50px;
     text-decoration: underline;
+    margin-left: 350px;
+    margin-right: 350px;
 }
