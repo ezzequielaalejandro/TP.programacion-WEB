@@ -12,7 +12,7 @@ body{
     margin-right: 1420px;
     text-align: left;
 }
-.titulo{
+h1{
     font-family:Arial, Helvetica, sans-serif;
     color: rgba(1, 184, 200);
     text-decoration: underline;

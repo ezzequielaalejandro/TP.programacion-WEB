@@ -1,8 +1,9 @@
-body {
-    background-image: url(https://www.ceupe.pe/images/easyblog_articles/286/b2ap3_large_919.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed ;
+body{
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
     h1{
         color:rgb(39, 30, 30);
         text-align:center;
@@ -53,12 +54,15 @@ body {
 /* Efecto hover en enlaces */
 .menu li a:hover {
     
-    background-color: #2a29292c;
+    background-color: #bcbcbc88;
     font-size: 25px;
+    transition: 0.2s;
+    box-shadow: 0 5px 30px rgba(0, 217, 255, 0.918);
 
 }
 
 .quees{
+    box-shadow: 0 5px 30px rgba(0, 217, 255, 0.918);
     margin-top: 250px;
     margin-bottom: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -94,6 +98,7 @@ body {
 }
 
 .Ejemplo{
+    box-shadow: 0 5px 30px rgba(0, 217, 255, 0.918);
     margin-top: 250px;
     margin-bottom: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -127,6 +132,7 @@ body {
 }
 
 .quepasa{
+   box-shadow: 0 5px 30px rgba(0, 217, 255, 0.918);
     margin-top: 250px;
     margin-bottom: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -161,6 +167,7 @@ body {
 }
 
 .info{
+    box-shadow: 0 5px 30px rgba(0, 217, 255, 0.918);
     margin-top: 250px;
     margin-bottom: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -197,13 +204,14 @@ body {
 .sponsors{
     margin-top: 150px;
     margin-bottom: 3px;
+    margin-left: 350px;
+    margin-right: 350px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(1, 184, 200);
     text-align: center;
     opacity: 0.95;
     font-size: 25px;
-    border-radius: 50px;
+    border-radius: 20px;
     text-decoration: underline;
-    margin-left: 350px;
-    margin-right: 350px;
+    box-shadow: 0 5px 30px rgba(0, 217, 255, 0.918);
 }

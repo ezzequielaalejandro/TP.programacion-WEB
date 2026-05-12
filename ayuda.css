@@ -1,10 +1,11 @@
 body{
+    text-align: center;
     background-repeat: no-repeat;
     background-attachment: fixed;   
-    background-image: url(https://static.vecteezy.com/system/resources/previews/011/263/042/non_2x/abstract-background-of-futuristic-digital-dark-blue-electronic-circuit-line-vector.jpg)
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/734/821/non_2x/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-and-technology-concept-digital-matrix-background-with-digits-1-0-illustration-vector.jpg)
 }
 
- .volver{
+.volver{
     background: rgba(1, 184, 200);
     border-radius: 15px;
     padding-left: 15px;
@@ -37,9 +38,23 @@ body{
     text-align: center;
     font-size: 25px;
     font-weight:900;
+    margin-bottom: 15px;
 }
 
-.imagen{
-    margin-top: 20px;
-    text-align: center;
+.cuerpo{
+    margin-bottom: 30px;
+    background-size:  20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: center;   
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }

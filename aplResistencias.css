@@ -33,6 +33,14 @@ body{
     margin-right: 400px;
 }
 
+.volver{
+    background: rgb(107, 0, 107);
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-right: 1420px;
+    text-align: left;
+}
+
 .ayuda{
     color:rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
