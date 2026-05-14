@@ -5,6 +5,14 @@ body{
     background-attachment:scroll ;
     text-align: center;
 }
+
+body{
+    cursor: url(opapm-cursor.png), auto;
+}
+a:hover{
+    cursor: url(opapm-pointer.png), auto;
+}
+
 .volver{
     position:fixed;
     background: rgb(255, 255, 255);

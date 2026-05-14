@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body{
+    cursor: url(opapm-cursor.png), auto;
+}
+a:hover{
+    cursor: url(opapm-pointer.png), auto;
+}
+
+.volver{
+    position:fixed;
+    background: purple;
+    border-radius: 15px;
+    margin-right: 1360px;
+    text-align: left;
+}
+
+.volver:hover{
+    box-shadow:0 0px 30px purple;
+}
+
+.titulo{
+   color:rgb(39, 30, 30);
+        text-align:center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        background-color: rgba(1, 184, 200);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 600px;
+        padding-right: 600px;
+        border-radius: 50px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        text-decoration: underline;
+        font-weight: 600;
+}
+
+    .subtitulo{
+        color:black;
+        font-weight: 550;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 65px;
+        padding-right: 65px;
+        border-radius: 20px;
+        background-color: rgba(1, 184, 200);
+        text-align: center;
+        font-size: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+        box-shadow: 0 14px 40px rgba(0, 217, 255, 0.25);
+        text-decoration: underline;
+    }
+
+.cuerpo0{
+    margin-bottom: 30px;
+    background-size:  20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(1, 184, 200);
+    text-align: left;   
+    opacity: 0.9;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-left: 160px;
+    margin-right: 160px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+smi{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    opacity: 0.9;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: red;
+}
+
+.img1{
+    margin-top: 115px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.img2{
+    display: flex; /* Activa el diseño flexible */
+    flex-wrap: wrap; /* Permite que las imágenes bajen si no hay espacio */
+    gap: 15px; /* Separación fija entre las fotos */
+    justify-content: center; /* Centra las fotos si sobra espacio */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 115px;
+    margin-bottom: 100px;
+}

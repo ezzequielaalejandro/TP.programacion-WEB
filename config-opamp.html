@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuraciones de los Amplifcadores Operacionales</title>
+     <link rel="stylesheet" type="text/css" href="config-opamp.css">
+</head>
+<body>
+    <div class="volver">
+        <a href="main.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="home" width="50" height="50"></a>
+    </div>
+        <div class="titulo">
+            <h7>Data-PB</h7>
+        </div>
+
+        <div class="subtitulo">
+            <h7>Configuraciones de los OP-AMPS</h7>
+        </div>
+        <div class ="cuerpo0">
+            <h7>Para entender el funcionamiento basico de los OP-AMPS debemos recurrir a la paradoja del "dulce de leche infinito"
+                siendo creada en 2025 por un gran pensador. Esta moraleja nos dicta la siguiente historia:
+            </h7>
+        </div>
+        
+        <div class ="cuerpo0">
+            <h7>Imagina que llegas a tu casa a la hora de la merienda, estas con hambre. Abris la heladera y encontras
+                dulce de leche y sobre la mesa hay pan. Agarras una cuchara y para matar el bajon comes pan con dulce de leche.
+            </h7>
+        </div>
+        <div class="cuerpo0">
+            <h7>
+                Ahora imagina la misma situacion pero el dulce de leche y el pan, nunca se acaban. Entonces vas a seguir
+                comiendo continuamente, sin parar.
+                TE ESTAS RETRO-ALIMENTANDO CONTINUAMENTE CON DULCE DE LECHE Y PAN.
+            </h7>
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                Ahora con el concepto de Retro-alimentcion definido vamos a explicar de manera muy deficiente como configurar
+                la Retro-alimentcion de un OP-AMP
+            </h7>
+        </div>
+
+            
+        <div class="subtitulo">
+            <h7>
+                Retro-alimentacion
+            </h7>
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                Como sabemos el opamp puede hacer muchas cosas pero por si solo <smi>NO ANDA, NO FUCIONA.</smi>
+                nesecita 2 resistencias fundamentales para la retro-alimentacion.
+            </h7>
+        </div>
+        
+        <div class="img1">
+            <img src="https://www.pcalero.com/Blog/wp-content/uploads/2017/01/Sin-t%C3%ADtulo-4_660x270.x38480.jpg"alt="retro" width="650" height="250">
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                En la imagen de arriba vemos que las resistencias fundamentales son R1 y R2, basicamente:
+            </h7>
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                R1 = R2 <smi>NO ANDA, NO FUNCIONA.</smi>
+
+            </h7>
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                R1 < R2 (si la diferencia es muy grande) <smi>AMPLIFICA QUE DA CALAMBRE</smi>.
+
+            </h7>
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                R2 < R1 (si la diferencia es muy granade) <smi>ATENUA QUE DA CALAMBRE</smi>.
+
+            </h7>
+        </div>
+
+        <div class="subtitulo">
+            <h7>
+                Amplificador INVERSOR/NO-INVERSOR
+            </h7>
+        </div>
+        
+        <div class="img1">
+            <img src="https://www.pcalero.com/Blog/wp-content/uploads/2017/01/Sin-t%C3%ADtulo-4_660x270.x38480.jpg"alt="retro" width="650" height="250">
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                Si la señal entra por - sale invertida. Si entra por + sale como entro (fase).
+            </h7>
+        </div>
+        
+        <div class="subtitulo">
+            <h7>
+                Sumador INVERSOR/NO-INVERSOR
+            </h7>
+        </div>
+        
+        <div class="img1">
+            <img src="https://mielectronicafacil.com/wp-content/uploads/2020/04/Amplificador-sumador-inversor-diagrama.png"alt="retro" width="650" height="350">
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                Suma señales, logica IDEM aplifcador.
+            </h7>
+        </div>
+        
+        <div class="subtitulo">
+            <h7>
+                Comparador
+            </h7>
+        </div>
+        
+        <div class="img1">
+            <img src="https://gc.scalahed.com/recursos/files/r145r/w856w/Archivos_U2/figura3liga1.jpg"alt="retro" width="550" height="350">
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                Compara señales con una tension de referencia, si la señal es mayor a la de referencia la deja pasar,
+                en caso contrario no la deja pasar (amplifacar, atenuar, ETC).
+            </h7>
+        </div>
+
+        <div class="subtitulo">
+            <h7>
+                Derivador-Integrador
+            </h7>
+        </div>
+        
+        <div class="img2">
+            <img src="https://herramientasdecalculo.com/wp-content/uploads/2020/05/image-245.png?w=1024"alt="retro" width="650" height="250">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_uW9nTcR6C_YMYR2wTrv4UWd12GAVK81bdt_9yYh3dhLUAZedvcsLCMaDEpOfJ-Oy6DQsVqYWrw_AHoqJOFn38FEnR_wSdGFtVeIxDY6cuRH6mqDqqYGc8IgrbLPACeCmqULda6DJhEw/s1600/figura+3-min.PNG"alt="retro" width="650" height="250">
+        </div>
+        
+        <div class="cuerpo0">
+            <h7>
+                A la izquiera un integrador, a la derecha un derivador. basicamente, hace la integrada de una señal o la derivada de una señal.
+                logica IDEM a la del amplicador
+            </h7>
+        </div>
+
+</body>
+</html>

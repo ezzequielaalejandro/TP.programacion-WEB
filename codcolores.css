@@ -12,6 +12,13 @@ body{
     text-align: left;
 }
 
+body{
+    cursor: url(opapm-cursor.png), auto;
+}
+a:hover{
+    cursor: url(opapm-pointer.png), auto;
+}
+
 .volver:hover{
     box-shadow:0 0px 30px purple;
 }

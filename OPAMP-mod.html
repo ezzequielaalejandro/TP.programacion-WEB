@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modelos de OP-AMPS</title>
+     <link rel="stylesheet" type="text/css" href="OPAMP-mod.css">
+</head>
+<body>
+    <div class="volver">
+        <a href="main.html"> <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="home" width="50" height="50"></a>
+    </div>
+
+    <div class="titulo">
+            <h7>Data-PB</h7>
+    </div>
+
+    <div class="subtitulo">
+            <h7>Modelos de OP-AMPS</h7>
+    </div>
+
+    <div class="cuerpo0">
+        <h7> Un <a href="https://en.wikipedia.org/wiki/Operational_amplifier"> OP-AMP</a> 
+            es un circuito integrado el cual tiene las funciones basicas, que se podran ver detalladamente en el apartado de
+            <a href= "config-opamp.html">configuraciones</a> pero resumidamente pueden amplificar, invertir, sumar, derivar e 
+        integrar distintas señales alternas.</h7>
+    </div>
+    
+    <div class="img1">
+        <img src="https://majestronicz.in/cdn/shop/files/IC-111.jpg?v=1721379374" alt="integrado" width="450" height="450" class="integrado">
+        <img src="https://electrosome.com/wp-content/uploads/2016/08/OpAmp-Symbol.jpg" alt="simbolo" width="450" height="450" class="simbolo">
+    </div>
+    
+    <div class="subtitulo">
+        <h7> Recomendaciones a tener en cuenta</h7>
+    </div>
+    
+    <div class="cuerpo0">
+        <h7> Al manejar un op-amp siempre tener en cuenta con que tension se lo alimenta,
+            suponiendo que usted, usuario de la red, tiene un minimo conocimiento de valores de tension y corriente
+            se espera que no deje en des-uso ningun OP-AMP por que ya se dan por entendido las consecuencias. Por ejemplo
+            no conecte 3.3V a GND, No toque con la punta de la lapicera el ciruito, si sale humo, se debe a que quemo el OP-AMP.
+        </h7>
+    </div>
+
+    
+    <div class="subtitulo">
+        <h7> Lista de los OP-AMPS basicos</h7>
+    </div>
+
+    <div class="lista"> 
+        <div class="bc547">
+            <details>
+                <summary>LM-741 </summary>
+                <p>Es un chip basico con capacidad de manejar +/- 15 volts en sus pines de alimentacion,
+                    es util en caso que se quieran amplificar señales para auriculares, pre-ampificaciones, etc. NO MAS DE 25mA.
+                </p>
+            </details>
+        </div>
+        <div class="2n2222">
+            <details>
+                <summary>LM-328 </summary>
+                <p>Es un chip con doble operacional dentro, quiere decir, que puede trabajar con 2 señales a la vez, es como tener
+                    2 LM-741 dentro de un solo encapsulado. mismo asi, comparte mismas caracteristicas de soporte de tension y corriente
+                    con el LM-741.
+                </p>
+            </details>
+        </div>
+        
+        <div class="bc557">
+            <details>
+                <summary>TDA-2030 </summary>
+            <p>Este chip es mucho mas "poderoso" que los de la gama de LM-***, pero que sea poderoso no quiere decir que sea magico.
+                ya que este chip puede soportar hasta 3.5 ampers maximos en su salida, siendo alimentado por +/- 14 volts.
+            puede ser utilizado en etapas de potencia de audio como para equipos de musica, radios o tocadiscos. </p>
+        </details>
+            </div>
+            
+            <div class="2n3055">
+                <details>
+                <summary>TDA-2003 </summary>
+                <p>A pesar de ser de la misma familia del TDA-2030, este chip es de menor "poder" que su pariente.
+                    puede ser utilizado de la misma manera que el TDA-2030 pero su corriente de salida es mucho menor </p>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

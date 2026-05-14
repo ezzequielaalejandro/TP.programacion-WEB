@@ -29,7 +29,7 @@ a:hover{
    color:rgb(39, 30, 30);
         text-align:center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
+        font-size: 50px;
         background-color: rgba(1, 184, 200);
         padding-top: 5px;
         padding-bottom: 5px;
@@ -49,7 +49,7 @@ a:hover{
         border-radius: 20px;
         background-color: rgba(1, 184, 200);
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         margin-left: 150px;
         margin-right: 150px;
         margin-bottom: 50px;
@@ -57,7 +57,7 @@ a:hover{
         box-shadow: 0 14px 40px rgba(0, 217, 255, 0.25);
     }
 
-.npn-pnp{
+.cuerpo0{
     margin-bottom: 30px;
     background-size:  20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,80 +74,14 @@ a:hover{
     padding-right: 15px;
 }
 
-.sub2{
-   color:black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 20px;
-        background-color: rgba(1, 184, 200);
-        text-align: center;
-        font-size: 25px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        box-shadow: 0 14px 40px rgba(0, 217, 255, 0.25);
+.img1{
+    display: flex; /* Activa el diseño flexible */
+    flex-wrap: wrap; /* Permite que las imágenes bajen si no hay espacio */
+    gap: 150px; /* Separación fija entre las fotos */
+    justify-content: center; /* Centra las fotos si sobra espacio */
+    padding: 20px;
+    border-radius: 8px;
 }
-
-.cuerpo1{
-    margin-bottom: 30px;
-    background-size:  20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(1, 184, 200);
-    text-align: left;   
-    opacity: 0.9;
-    font-size: 25px;
-    border-radius: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.imagen1{
-    text-align: center;
-}
-
-.sub3{
-   color:black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 20px;
-        background-color: rgba(1, 184, 200);
-        text-align: center;
-        font-size: 25px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        box-shadow: 0 14px 40px rgba(0, 217, 255, 0.25);;
-}
-
-.cuerpo2{
-    margin-bottom: 30px;
-    background-size:  20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(1, 184, 200);
-    text-align: left;   
-    opacity: 0.9;
-    font-size: 25px;
-    border-radius: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-/* =========================
-   CONTENEDOR PRINCIPAL
-========================= */
 
 .lista{
     display: grid;
@@ -204,7 +138,7 @@ a:hover{
 .bc547::before,
 .\32 n2222::before,
 .\32 n3055::before{
-    content: "NPN";
+    content: "SOFT";
     position: absolute;
     top: 0;
     right: 0;
@@ -220,20 +154,16 @@ a:hover{
 /* Hover NPN */
 
 .bc547:hover,
-.\32 n2222:hover,
 .\32 n3055:hover{
     box-shadow:
         0 14px 40px rgba(0, 217, 255, 0.25);
-    
 }
 
 /* =========================
    SECCION PNP
 ========================= */
 
-.bc557,
-.tip127,
-.bd140{
+.bc557{
     background: linear-gradient(
         145deg,
         rgba(255, 0, 120, 0.12),
@@ -250,7 +180,7 @@ a:hover{
 .bc557::before,
 .tip127::before,
 .bd140::before{
-    content: "PNP";
+    content: "PODEROSO";
     position: absolute;
     top: 0;
     right: 0;

@@ -2,8 +2,17 @@ body{
     text-align: center;
     background-repeat: no-repeat;
     background-attachment: fixed;   
-    background-image: url(https://static.vecteezy.com/system/resources/previews/005/734/821/non_2x/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-and-technology-concept-digital-matrix-background-with-digits-1-0-illustration-vector.jpg)
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/734/821/non_2x/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-and-technology-concept-digital-matrix-background-with-digits-1-0-illustration-vector.jpg);
+    cursor: url(opamp-cursor.png), auto;
 }
+
+body{
+    cursor: url(opapm-cursor.png), auto;
+}
+a:hover{
+    cursor: url(opapm-pointer.png), auto;
+}
+
 
 .volver{
     position:fixed;
