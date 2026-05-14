@@ -7,12 +7,17 @@ body{
 }
 
 .volver{
-    background: #06b6d4;
+    position:fixed;
+    background: purple;
     border-radius: 15px;
-    padding-left: 15px;
     margin-right: 1360px;
     text-align: left;
 }
+
+.volver:hover{
+    box-shadow:0 0px 30px purple;
+}
+
 .titulo{
    color:rgb(39, 30, 30);
         text-align:center;

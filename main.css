@@ -18,6 +18,10 @@ body{
     }
 }
 
+.titulo:hover{
+    cursor: crosshair;
+}
+
 .menu {
     list-style: none;
     background: rgba(1, 184, 200);
@@ -49,6 +53,7 @@ body{
 /* Mostrar submenú al pasar el mouse */
 .dropdown:hover .dropdown-content {
     display: block;
+    animation-delay: 50ms   ;
 }
 
 /* Efecto hover en enlaces */
