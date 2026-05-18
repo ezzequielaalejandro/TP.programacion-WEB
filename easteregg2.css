@@ -1,8 +1,5 @@
 body{
-    background-image: url(https://uncatolico.com/wp-content/gallery/imagenes-catolicas/003_uncatolicoimgcat.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:scroll ;
+    background-image: url(san-easteregg.png);
     text-align: center;
 }
 
@@ -31,12 +28,13 @@ h1{
     text-decoration: underline;
     background-color: rgb(255, 255, 255);
     border-radius: 100px;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 15px;
     margin-left: 400px;
     margin-right: 400px;
 }
 .san-mac{
-    margin-top: 35px;
+    margin-top: 790px;
+    font-size: 200px;
+    color: transparent;
 }
-
