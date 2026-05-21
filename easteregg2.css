@@ -1,6 +1,9 @@
 body{
-    background-image: url(san-easteregg.png);
+    background-image: url(san-easteregg.png );
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
 }
 
 body{
@@ -33,8 +36,9 @@ h1{
     margin-left: 400px;
     margin-right: 400px;
 }
+
 .san-mac{
-    margin-top: 790px;
-    font-size: 200px;
-    color: transparent;
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 45px;
 }
