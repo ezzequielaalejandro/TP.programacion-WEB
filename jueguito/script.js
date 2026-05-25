@@ -462,18 +462,50 @@ function startGame(){
         let x;
         let dir;
 
-        if(attacker === 1){
+        /* =========================================
+   ========= DIRECCION DINAMICA =============
+   ========================================= */
 
-            x = p1x + 120;
+if(attacker === 1){
 
-            dir = 1;
+    /*
+    SI P1 ESTA A LA IZQUIERDA
+    DISPARA A LA DERECHA
+    */
 
-        }else{
+    if(p1x < p2x){
 
-            x = p2x - 50;
+        x = p1x + 120;
 
-            dir = -1;
-        }
+        dir = 1;
+
+    }else{
+
+        /*
+        SI ESTA A LA DERECHA
+        DISPARA A LA IZQUIERDA
+        */
+
+        x = p1x - 50;
+
+        dir = -1;
+    }
+
+}else{
+
+    if(p2x < p1x){
+
+        x = p2x + 120;
+
+        dir = 1;
+
+    }else{
+
+        x = p2x - 50;
+
+        dir = -1;
+    }
+}a
 
         ball.style.left = x + "px";
         ball.style.bottom = "260px";
@@ -707,6 +739,31 @@ function startGame(){
 
         p1.style.left = p1x + "px";
         p2.style.left = p2x + "px";
+
+        /* =========================================
+   ========= AUTO DIRECCION =================
+   ========================================= */
+
+/*
+SI PLAYER 1 ESTA A LA IZQUIERDA
+MIRA HACIA LA DERECHA
+*/
+
+if(p1x < p2x){
+
+    p1.style.transform = "scaleX(1)";
+    p2.style.transform = "scaleX(-1)";
+
+}else{
+
+    /*
+    SI PLAYER 1 PASA AL OTRO LADO
+    SE INVIERTEN
+    */
+
+    p1.style.transform = "scaleX(-1)";
+    p2.style.transform = "scaleX(1)";
+}
 
         p1.style.bottom = (140 + p1y) + "px";
         p2.style.bottom = (140 + p2y) + "px";
