@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mortal Kombat Retro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     ================= SELECTOR PERSONAJES ===============
+     ===================================================== -->
+
+<div id="characterSelect">
+
+    <h1>MORTAL KOMBAT</h1>
+
+    <div class="selectors">
+
+        <!-- PLAYER 1 -->
+        <div class="selectPanel">
+
+            <h2>PLAYER 1</h2>
+
+            <div id="p1Characters" class="characterGrid"></div>
+
+        </div>
+
+        <!-- PLAYER 2 -->
+        <div class="selectPanel">
+
+            <h2>PLAYER 2</h2>
+
+            <div id="p2Characters" class="characterGrid"></div>
+
+        </div>
+
+    </div>
+
+    <button id="startBtn">START FIGHT</button>
+
+</div>
+
+<!-- =====================================================
+     =================== JUEGO ============================
+     ===================================================== -->
+
+<div id="game">
+
+    <!-- HUD -->
+    <div class="hud">
+
+        <div class="playerHud">
+
+            <div id="p1Name">PLAYER 1</div>
+
+            <div class="healthBar">
+                <div class="health" id="health1"></div>
+            </div>
+
+            <div class="manaBar">
+                <div class="mana" id="mana1"></div>
+            </div>
+
+        </div>
+
+        <div id="vs">VS</div>
+
+        <div class="playerHud">
+
+            <div id="p2Name">PLAYER 2</div>
+
+            <div class="healthBar">
+                <div class="health" id="health2"></div>
+            </div>
+
+            <div class="manaBar">
+                <div class="mana" id="mana2"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PERSONAJES -->
+    <div id="player1" class="fighter"></div>
+    <div id="player2" class="fighter"></div>
+
+    <!-- PISO -->
+    <div id="ground"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

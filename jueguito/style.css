@@ -1,0 +1,220 @@
+body{
+    margin:0;
+    overflow:hidden;
+    background:black;
+    font-family:Arial;
+}
+
+/* =====================================================
+   ================= CHARACTER SELECT ==================
+   ===================================================== */
+
+#characterSelect{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(to bottom,#111,#300);
+
+    z-index:9999;
+
+    color:white;
+
+    text-align:center;
+}
+
+.selectors{
+
+    display:flex;
+    justify-content:space-around;
+
+    margin-top:50px;
+}
+
+.characterGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,150px);
+
+    gap:10px;
+}
+
+.characterCard{
+
+    border:3px solid white;
+
+    padding:10px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+    background:#222;
+}
+
+.characterCard:hover{
+    transform:scale(1.05);
+    background:#500;
+}
+
+.selected{
+    border-color:yellow;
+}
+
+/* =====================================================
+   ===================== GAME ==========================
+   ===================================================== */
+
+#game{
+
+    width:100vw;
+    height:100vh;
+
+    position:relative;
+
+    background:
+    linear-gradient(to top,#222,#556);
+
+    overflow:hidden;
+
+    display:none;
+}
+
+/* =====================================================
+   ===================== HUD ===========================
+   ===================================================== */
+
+.hud{
+
+    position:absolute;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+    z-index:1000;
+
+    color:white;
+}
+
+.healthBar{
+
+    width:350px;
+    height:30px;
+
+    border:3px solid white;
+
+    background:#222;
+}
+
+.health{
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(to right,red,orange);
+}
+
+.manaBar{
+
+    width:350px;
+    height:15px;
+
+    border:2px solid white;
+
+    margin-top:5px;
+}
+
+.mana{
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(to right,cyan,blue);
+}
+
+/* =====================================================
+   ===================== PERSONAJES ====================
+   ===================================================== */
+
+.fighter{
+
+    position:absolute;
+
+    width:180px;
+    height:240px;
+
+    /* =====================================
+       AJUSTA LA ALTURA SOBRE EL PISO
+       ===================================== */
+
+    bottom:0px;
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom center;
+
+    image-rendering:pixelated;
+}
+
+/* =====================================================
+   ===================== ESCENARIO =====================
+   ===================================================== */
+
+#ground{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+    height:140px;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        #222 0px,
+        #444 50px
+    );
+
+    border-top:5px solid #999;
+}
+
+/* =====================================================
+   ===================== FIREBALL ======================
+   ===================================================== */
+
+.fireball{
+
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    background-image:
+    url("sprites/fireball.png");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    image-rendering:pixelated;
+
+    z-index:500;
+
+    pointer-events:none;
+
+    filter:
+    drop-shadow(0 0 10px orange);
+}
