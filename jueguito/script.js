@@ -4,7 +4,7 @@
 
 const characters = {
 
-    MrOpams:{
+    Mr_Opams:{
         hp:100,
         mana:100,
         speed:6,
@@ -14,7 +14,7 @@ const characters = {
         fireball:20
     },
 
-    subzero:{
+    Cordero:{
         hp:120,
         mana:80,
         speed:5,
@@ -24,7 +24,7 @@ const characters = {
         fireball:16
     },
 
-    reptile:{
+    Señor_P:{
         hp:90,
         mana:120,
         speed:8,
@@ -34,7 +34,7 @@ const characters = {
         fireball:25
     },
 
-    raiden:{
+    La_Mac:{
         hp:110,
         mana:100,
         speed:6,
@@ -44,7 +44,7 @@ const characters = {
         fireball:22
     },
 
-    kitana:{
+    El_DT:{
         hp:95,
         mana:110,
         speed:7,
@@ -131,6 +131,33 @@ Object.keys(characters).forEach(name=>{
 
         selectedP1 = name;
 
+        /* =========================================
+   ========= ACTUALIZA STATS P1 ============
+   ========================================= */
+
+const stats = characters[name];
+
+document.getElementById("p1hp")
+.innerText = stats.hp;
+
+document.getElementById("p1mana")
+.innerText = stats.mana;
+
+document.getElementById("p1speed")
+.innerText = stats.speed;
+
+document.getElementById("p1jump")
+.innerText = stats.jump;
+
+document.getElementById("p1punch")
+.innerText = stats.punch;
+
+document.getElementById("p1kick")
+.innerText = stats.kick;
+
+document.getElementById("p1fireball")
+.innerText = stats.fireball;
+
         document.querySelectorAll("#p1Characters .characterCard")
         .forEach(x=>x.classList.remove("selected"));
 
@@ -155,6 +182,33 @@ Object.keys(characters).forEach(name=>{
         }
 
         selectedP2 = name;
+
+        /* =========================================
+   ========= ACTUALIZA STATS P2 ============
+   ========================================= */
+
+const stats = characters[name];
+
+document.getElementById("p2hp")
+.innerText = stats.hp;
+
+document.getElementById("p2mana")
+.innerText = stats.mana;
+
+document.getElementById("p2speed")
+.innerText = stats.speed;
+
+document.getElementById("p2jump")
+.innerText = stats.jump;
+
+document.getElementById("p2punch")
+.innerText = stats.punch;
+
+document.getElementById("p2kick")
+.innerText = stats.kick;
+
+document.getElementById("p2fireball")
+.innerText = stats.fireball;
 
         document.querySelectorAll("#p2Characters .characterCard")
         .forEach(x=>x.classList.remove("selected"));
@@ -410,166 +464,212 @@ function startGame(){
         }
     }
 
-    /* =================================================
-       ================= FIREBALL ======================
-       ================================================= */
+/* =================================================
+   ================= FIREBALL ======================
+   ================================================= */
 
-    function fireball(attacker){
+function fireball(attacker){
 
-        if(attacker === 1){
+    /* =========================================
+       ========= PLAYER 1 ======================
+       ========================================= */
 
-            if(mana1 < 25 || !canFireball1) return;
+    if(attacker === 1){
 
-            mana1 -= 25;
+        if(mana1 < 25) return;
 
-            canFireball1 = false;
+        if(!canFireball1) return;
 
-            p1State = "fireball";
+        mana1 -= 25;
 
-            setSprite(1,"fireball");
+        canFireball1 = false;
 
-        }else{
+        p1State = "fireball";
 
-            if(mana2 < 25 || !canFireball2) return;
-
-            mana2 -= 25;
-
-            canFireball2 = false;
-
-            p2State = "fireball";
-
-            setSprite(2,"fireball");
-        }
-
-        const ball = document.createElement("div");
-
-        ball.classList.add("fireball");
-
-        if(attacker === 1){
-
-            ball.style.backgroundImage =
-            `url('sprites/${selectedP1}/projectile.png')`;
-
-        }else{
-
-            ball.style.backgroundImage =
-            `url('sprites/${selectedP2}/projectile.png')`;
-        }
-
-        document.getElementById("game")
-        .appendChild(ball);
-
-        let x;
-        let dir;
-
-        /* =========================================
-   ========= DIRECCION DINAMICA =============
-   ========================================= */
-
-if(attacker === 1){
-
-    /*
-    SI P1 ESTA A LA IZQUIERDA
-    DISPARA A LA DERECHA
-    */
-
-    if(p1x < p2x){
-
-        x = p1x + 120;
-
-        dir = 1;
+        setSprite(1,"fireball");
 
     }else{
 
-        /*
-        SI ESTA A LA DERECHA
-        DISPARA A LA IZQUIERDA
-        */
+        /* =====================================
+           ========= PLAYER 2 ==================
+           ===================================== */
 
-        x = p1x - 50;
+        if(mana2 < 25) return;
 
-        dir = -1;
+        if(!canFireball2) return;
+
+        mana2 -= 25;
+
+        canFireball2 = false;
+
+        p2State = "fireball";
+
+        setSprite(2,"fireball");
     }
 
-}else{
+    /* =========================================
+       ========= CREAR PROYECTIL ===============
+       ========================================= */
 
-    if(p2x < p1x){
+    const ball = document.createElement("div");
 
-        x = p2x + 120;
+    ball.classList.add("fireball");
 
-        dir = 1;
+    /* SPRITE DEL PROYECTIL */
+
+    if(attacker === 1){
+
+        ball.style.backgroundImage =
+        `url('sprites/${selectedP1}/projectile.png')`;
 
     }else{
 
-        x = p2x - 50;
-
-        dir = -1;
+        ball.style.backgroundImage =
+        `url('sprites/${selectedP2}/projectile.png')`;
     }
-}a
+
+    document.getElementById("game")
+    .appendChild(ball);
+
+    /* =========================================
+       ========= POSICION ======================
+       ========================================= */
+
+    let x;
+    let y;
+    let dir;
+
+    if(attacker === 1){
+
+        /* PLAYER 1 */
+
+        if(p1x < p2x){
+
+            x = p1x + 220;
+            dir = 1;
+
+        }else{
+
+            x = p1x - 40;
+            dir = -1;
+        }
+
+        y = 180 + p1y;
+
+    }else{
+
+        /* PLAYER 2 */
+
+        if(p2x < p1x){
+
+            x = p2x + 220;
+            dir = 1;
+
+        }else{
+
+            x = p2x - 40;
+            dir = -1;
+        }
+
+        y = 180 + p2y;
+    }
+
+    /* POSICION INICIAL */
+
+    ball.style.left = x + "px";
+    ball.style.bottom = y + "px";
+
+    /* =========================================
+       ========= MOVIMIENTO ====================
+       ========================================= */
+
+    const interval = setInterval(()=>{
+
+        x += 16 * dir;
 
         ball.style.left = x + "px";
-        ball.style.bottom = "260px";
 
-        const interval = setInterval(()=>{
+        /* =====================================
+           ========= COLISIONES ================
+           ===================================== */
 
-            x += 14 * dir;
+        if(attacker === 1){
 
-            ball.style.left = x + "px";
+            if(Math.abs(x - p2x) < 120){
 
-            if(attacker === 1){
-
-                if(Math.abs(x - p2x) < 90){
-
-                    damage(2,stats1.fireball);
-
-                    clearInterval(interval);
-
-                    ball.remove();
-                }
-
-            }else{
-
-                if(Math.abs(x - p1x) < 90){
-
-                    damage(1,stats2.fireball);
-
-                    clearInterval(interval);
-
-                    ball.remove();
-                }
-            }
-
-            if(x < -200 ||
-               x > window.innerWidth + 200){
+                damage(2,stats1.fireball);
 
                 clearInterval(interval);
 
                 ball.remove();
             }
 
-        },16);
+        }else{
 
-        setTimeout(()=>{
+            if(Math.abs(x - p1x) < 120){
 
-            if(attacker === 1){
+                damage(1,stats2.fireball);
+
+                clearInterval(interval);
+
+                ball.remove();
+            }
+        }
+
+        /* =====================================
+           ========= SALE PANTALLA =============
+           ===================================== */
+
+        if(
+            x < -300 ||
+            x > window.innerWidth + 300
+        ){
+
+            clearInterval(interval);
+
+            ball.remove();
+        }
+
+    },16);
+
+    /* =========================================
+       ========= TERMINA ANIMACION =============
+       ========================================= */
+
+    setTimeout(()=>{
+
+        if(attacker === 1){
+
+            canFireball1 = true;
+
+            /* SOLO VUELVE A IDLE
+               SI NO ESTA HACIENDO OTRA COSA */
+
+            if(
+                p1State === "fireball"
+            ){
 
                 p1State = "idle";
 
                 setSprite(1,"idle");
+            }
 
-                canFireball1 = true;
+        }else{
 
-            }else{
+            canFireball2 = true;
+
+            if(
+                p2State === "fireball"
+            ){
 
                 p2State = "idle";
 
                 setSprite(2,"idle");
-
-                canFireball2 = true;
             }
+        }
 
-        },500);
-    }
+    },350);
+}
 
     /* =================================================
        ================= CONTROLES =====================

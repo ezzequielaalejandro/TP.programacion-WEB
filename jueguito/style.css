@@ -17,52 +17,234 @@ body{
     height:100%;
 
     background:
-    linear-gradient(to bottom,#111,#300);
+    radial-gradient(circle at top,#500,#100,#000);
 
     z-index:9999;
 
     color:white;
 
     text-align:center;
+
+    overflow-y:auto;
 }
+
+#characterSelect h1{
+
+    font-size:70px;
+
+    margin-top:20px;
+
+    color:#ffcc00;
+
+    letter-spacing:5px;
+
+    text-shadow:
+    0 0 10px red,
+    0 0 20px orange,
+    0 0 40px red;
+
+    font-family:Impact;
+}
+
+/* =====================================================
+   ================= SELECTORES ========================
+   ===================================================== */
 
 .selectors{
 
     display:flex;
+
     justify-content:space-around;
 
-    margin-top:50px;
+    align-items:flex-start;
+
+    margin-top:20px;
+
+    padding-bottom:40px;
+
+    flex-wrap:wrap;
 }
+
+.selectPanel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin:20px;
+}
+
+.selectPanel h2{
+
+    font-size:35px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px cyan;
+}
+
+/* =====================================================
+   ================= CHARACTER GRID ====================
+   ===================================================== */
 
 .characterGrid{
 
     display:grid;
 
-    grid-template-columns:repeat(2,150px);
+    grid-template-columns:repeat(2,170px);
 
-    gap:10px;
+    gap:12px;
 }
 
 .characterCard{
 
     border:3px solid white;
 
-    padding:10px;
+    padding:14px;
 
     cursor:pointer;
 
     transition:0.2s;
 
-    background:#222;
+    background:
+    linear-gradient(to bottom,#222,#111);
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 0 10px black;
 }
 
 .characterCard:hover{
+
     transform:scale(1.05);
-    background:#500;
+
+    background:
+    linear-gradient(to bottom,#700,#300);
+
+    box-shadow:
+    0 0 20px red;
 }
 
 .selected{
+
     border-color:yellow;
+
+    box-shadow:
+    0 0 20px yellow;
+}
+
+/* =====================================================
+   ===================== STATS PANEL ===================
+   ===================================================== */
+
+.statsPanel{
+
+    margin-top:20px;
+
+    width:320px;
+
+    background:#111;
+
+    border:3px solid white;
+
+    padding:15px;
+
+    text-align:left;
+
+    box-shadow:
+    0 0 20px red;
+}
+
+.statsPanel h3{
+
+    margin-top:0;
+
+    color:yellow;
+
+    text-align:center;
+
+    font-size:28px;
+
+    text-shadow:
+    0 0 10px orange;
+}
+
+.statLine{
+
+    margin:10px 0;
+
+    font-size:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-bottom:1px solid #444;
+
+    padding-bottom:4px;
+}
+
+/* =====================================================
+   ===================== START BUTTON ==================
+   ===================================================== */
+
+#startBtn{
+
+    margin-top:20px;
+
+    margin-bottom:40px;
+
+    width:420px;
+
+    height:90px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:42px;
+
+    font-family:Impact;
+
+    letter-spacing:3px;
+
+    color:white;
+
+    background:
+    linear-gradient(to bottom,#ff0000,#700000);
+
+    border:4px solid #ffcc00;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px orange;
+
+    transition:0.2s;
+}
+
+#startBtn:hover{
+
+    transform:scale(1.05);
+
+    background:
+    linear-gradient(to bottom,#ff4444,#990000);
+
+    box-shadow:
+    0 0 20px yellow,
+    0 0 40px red;
+}
+
+#startBtn:active{
+
+    transform:scale(0.98);
 }
 
 /* =====================================================
@@ -95,6 +277,7 @@ body{
     width:100%;
 
     display:flex;
+
     justify-content:space-between;
 
     padding:20px;
@@ -155,10 +338,6 @@ body{
     width:360px;
     height:440px;
 
-    /* =====================================
-       AJUSTA LA ALTURA SOBRE EL PISO
-       ===================================== */
-
     bottom:0px;
 
     background-size:contain;
@@ -201,9 +380,6 @@ body{
 
     width:90px;
     height:90px;
-
-    background-image:
-    url("sprites/fireball.png");
 
     background-size:contain;
     background-repeat:no-repeat;
