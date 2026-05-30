@@ -7,8 +7,8 @@ const characters = {
     Mr_Opams:{
         hp:100,
         mana:100,
-        speed:6,
-        jump:18,
+        speed:15,
+        jump:8,
         punch:10,
         kick:15,
         fireball:20
@@ -27,10 +27,10 @@ const characters = {
     Señor_P:{
         hp:90,
         mana:120,
-        speed:8,
-        jump:20,
-        punch:8,
-        kick:12,
+        speed:10,
+        jump:25,
+        punch:15,
+        kick:5,
         fireball:25
     },
 
